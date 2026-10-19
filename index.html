@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Formulario CSS3</title>
+     <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.818);
+        }
+        .two-columns{
+            margin-top: 15px;
+            display: flex;
+            gap: 20px;
+        }
+        .fields{
+            margin-top: 15px;
+        }
+        textarea{
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #ffffff7a;
+            color: #ffffff7a;
+            outline: none;
+            width: 100%;
+        }
+        .fields input,
+        .fields textarea{
+            background: transparent !important;
+            border: none !important;
+            border-bottom: 1px solid#ffffff7a !important;
+            color: #ffffff7a;
+            outline: none;
+            width: 100px;
+            display: block;
+            padding: 8 px 0;
+            margin-top: 15px;
+        }
+        .btn button{
+            background-color: #1beae990;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        .btn button:hover{
+            background-color: #1aea90;
+            transition: background-color 0.3s ease;
+        }
+     </style>
+
+</head>
+<body>
+     <form>
+		<div class="two-columns">
+			<div class="fields">
+				<label for="name" style="color: #ffffff7a;">NOMBRE</label>
+				<input id="name" type="text" name="name" autocomplete="off"> 	
+			</div>
+			
+			<div class="fields">
+				<label for="lastname" style="color: #ffffff7a;">APELLIDO</label>
+				<input id="lastname" type="text" name="lastname" autocomplete="off">	
+			</div>
+		</div>
+
+		<div class="two-columns">
+			<div class="fields">
+				<label for="tel" style="color: #ffffff7a;">TELEFONO</label>
+				<input id="tel" type="text" name="tel" autocomplete="off">
+			</div>
+
+			<div class="fields">
+				<label for="email" style="color: #ffffff7a;">CORREO</label>
+				<input id="email" type="email" name="email" autocomplete="off">	
+			</div>
+		</div>
+		
+
+		<div class="fields">
+			<label for="coment" style="color: #ffffff7a;">COMENTARIOS</label>
+			<textarea id="coment"></textarea>
+		</div>
+
+		<div class="btn" >
+			<button style="color: #ffffffc4;">ENVIAR</button>	
+		</div>
+	</form>
+</body>
+</html>
